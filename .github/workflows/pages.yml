@@ -40,7 +40,6 @@ jobs:
       - name: Render self-contained preview
         env:
           LANE_ID: lane-07
-          LANE_MARKER: 2va4-yiiw
           PORT: 8787
         run: |
           pnpm start > /tmp/rig.log 2>&1 &
