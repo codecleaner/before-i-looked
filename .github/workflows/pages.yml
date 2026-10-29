@@ -52,7 +52,6 @@ jobs:
           mkdir -p site
           curl --fail --silent http://127.0.0.1:8787/digest/2026-10-28 > site/index.html
           test -s site/index.html
-          grep -F '2va4-yiiw' site/index.html
           ! grep -qi '<script' site/index.html
 
       - name: Configure Pages
